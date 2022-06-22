@@ -1,0 +1,99 @@
+{
+  "name": "ipnw-projekt",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blackbox-vision/react-qr-reader": "^5.0.0",
+    "@emotion/core": "^11.0.0",
+    "@emotion/css": "^11.1.3",
+    "@heroicons/react": "^1.0.5",
+    "@hookform/resolvers": "^2.8.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.27",
+    "@types/react": "^17.0.26",
+    "@types/react-dom": "^17.0.9",
+    "axios": "^0.22.0",
+    "bootstrap": "^5.1.3",
+    "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
+    "firebase": "^9.8.4",
+    "framer-motion": "^4.1.17",
+    "lodash": "^4.17.21",
+    "mobx": "^6.3.10",
+    "mobx-persist-store": "^1.0.4",
+    "mobx-react": "^7.2.1",
+    "rc-drawer": "^4.4.3",
+    "rc-slider": "^9.7.5",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.17.2",
+    "react-loader-spinner": "^5.0.6",
+    "react-loading-skeleton": "^3.0.2",
+    "react-modal-sheet": "^1.4.2",
+    "react-query": "^3.27.0",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "4.0.3",
+    "react-select": "^5.2.2",
+    "react-toastify": "^8.1.1",
+    "react-verification-code-input": "^1.2.9",
+    "recharts": "^2.1.8",
+    "s3-deploy": "^1.4.0",
+    "tiny-clean-object": "^1.2.0",
+    "typescript": "^4.4.3",
+    "use-async-effect": "^2.2.3",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint src/**/*.{ts,tsx} --quiet --fix",
+    "lint-init": "eslint --init",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:production": "NODE_ENV=production react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.175",
+    "@types/react-router-dom": "^5.3.1",
+    "@types/styled-components": "^5.1.25",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.1",
+    "react-error-overlay": "^6.0.9"
+  },
+  "resolutions": {
+    "//": "See https://github.com/facebook/create-react-app/issues/11773",
+    "react-error-overlay": "6.0.9"
+  }
+}

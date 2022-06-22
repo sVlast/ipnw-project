@@ -1,0 +1,68 @@
+/* @font-face {
+  font-family: 'Doctrine';
+  font-weight: normal;
+  src: url(./shared/assets/fonts/doctrine/Doctrine-Regular.ttf)
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Doctrine';
+  font-weight: bold;
+  src: url(./shared/assets/fonts/doctrine/Doctrine-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Doctrine Stencil';
+  font-weight: normal;
+
+  src: url(./shared/assets/fonts/doctrineStencil/DoctrineStencil-Light.ttf)
+    format('truetype');
+} */
+
+* {
+  /* font-family: 'Doctrine', sans-serif; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+a {
+  all: unset;
+}
+.Toastify__toast-theme--light {
+  bottom: 6rem;
+  background-color: #1d5883 !important;
+  font-family: 'Doctrine', sans-serif;
+  color: #ffffff !important;
+  font-size: 1rem !important;
+  box-shadow: 0px -2px 40px 0px #9a9fa340 !important;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    100% 100%,
+    55% 100%,
+    50% 70%,
+    45% 100%,
+    0 100%
+  ) !important;
+}
+.Toastify__toast-body {
+  padding: 0px 0px 15px 10px !important;
+}
+.Toastify__close-button--light {
+  color: white !important;
+  opacity: 1 !important;
+  padding: 6px !important;
+}
