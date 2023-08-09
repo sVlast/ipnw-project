@@ -1,5 +1,4 @@
-import { css } from '@emotion/css';
-import React, { useState } from 'react';
+import React from 'react';
 import { Button, ListGroup, Stack } from 'react-bootstrap';
 import { isPrimitive } from '../../pages/ListPage';
 
@@ -31,7 +30,6 @@ export const ListItem = (props: ListItemProps) => {
   return isPrimitive(item[objkey]) ? (
     <ListGroup.Item className={`${listOpen ? '' : i > 0 && 'd-none'}`} key={i}>
       <Stack direction="horizontal" gap={3}>
-        {}
         <div>
           {(objkey as string)?.replace(/^./, objkey[0].toUpperCase())} :{' '}
           {item[objkey]}
@@ -39,7 +37,7 @@ export const ListItem = (props: ListItemProps) => {
         {i === 0 && (
           <>
             <Button onClick={handleOpenListItem} size="sm" className="">
-              expand
+              {listOpen ?  "collapse": "expand"}
             </Button>
             {setSelectedItems && (
               <Button
@@ -47,7 +45,6 @@ export const ListItem = (props: ListItemProps) => {
                   setSelectedItems((arr: any) => [...arr, item]);
                 }}
                 size="sm"
-                className=""
               >
                 add
               </Button>
@@ -68,7 +65,3 @@ export const ListItem = (props: ListItemProps) => {
     <></>
   );
 };
-
-// const listStyle = ()=> css`
-
-// `

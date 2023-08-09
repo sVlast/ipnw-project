@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Button, Carousel, Container, Row, Stack } from 'react-bootstrap';
-import { times } from 'lodash';
 
 export const ImageGaleryPage = () => {
   const [interval, setInterval] = useState<number | null | undefined>(null);

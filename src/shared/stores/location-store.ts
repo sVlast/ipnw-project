@@ -2,8 +2,8 @@ import { makeAutoObservable } from 'mobx';
 import { makePersistable } from 'mobx-persist-store';
 
 class ThemeStore {
-  color: string = '#121212';
-  backgroundColor: string = '#ffffff';
+  color = '#121212';
+  backgroundColor = '#ffffff';
 
   constructor() {
     makeAutoObservable(this);
