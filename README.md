@@ -1,3 +1,44 @@
+### Firebase React App
+
+*This app was made for the purposes of university class assignemt*
+
+Made for the purposes of demonstaring interactivity on the web using JavaScript, in this case using ReactJS
+
+Features: 
+- List
+    - on selecting category, makes a api call to [SWAPI](https://swapi.dev/), stores response locally using mobix store
+    - displays fetched data in a list
+    - each object contains a list with object properties in itself which can be expanded 
+    - can add and remove objects as list items from fetched data to seperate list
+- Image gallery 
+    - fetches images form [picsum.photos](https://picsum.photos)
+    - display fetched images using React Bootstrap Carousel
+    - start and stop function control slideshow
+- Contact Form
+    - contains inputs for username, email, subject and message
+    - each input has its separate validation
+        - username: minial number of charachters
+        - email: check for valid email format
+        - subject and message must not be empty
+    - invalid inputs are marked in red, and error message is shown below
+    - on submit, if form is valid, form data is logged in browser console
+- Settings 
+    - change website theme (light/dark), selected option stored in local storage
+    - change font size
+
+Tech used: 
+- ReactJS
+- TypeScript
+- Firebase for hosting/deployment
+- React router dom
+- React Query
+- React Bootstrat
+    - Used components for layout and resopnsive design, UI components like buttons and list
+- React hook form 
+- yup for form validation
+- mobx for local storage/state managment
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
