@@ -66,3 +66,7 @@ a {
   opacity: 1 !important;
   padding: 6px !important;
 }
+
+ul {
+ margin-left: 50px;
+}
