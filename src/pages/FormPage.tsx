@@ -1,8 +1,7 @@
 import React from 'react';
-import { Button, Container, Form, FormControl, Stack } from 'react-bootstrap';
+import { Button, Container, Form, Stack } from 'react-bootstrap';
 import {
   useForm,
-  SubmitHandler,
   FormProvider,
   Controller,
 } from 'react-hook-form';
@@ -42,7 +41,6 @@ export const FormPage = () => {
         <FormProvider {...methods}>
           <Form
             noValidate
-            className=""
             onSubmit={methods.handleSubmit(handleSubmit)}
           >
             <Controller
@@ -55,7 +53,6 @@ export const FormPage = () => {
                 <Form.Group className="mb-3">
                   <Form.Label>User Name</Form.Label>
                   <Form.Control
-                    // name="username"
                     onChange={onChange}
                     onBlur={onBlur}
                     value={value}
@@ -79,7 +76,6 @@ export const FormPage = () => {
                 <Form.Group className="mb-3">
                   <Form.Label>Email</Form.Label>
                   <Form.Control
-                    // name="username"
                     onChange={onChange}
                     onBlur={onBlur}
                     value={value}
@@ -103,7 +99,6 @@ export const FormPage = () => {
                 <Form.Group className="mb-3">
                   <Form.Label>Subject</Form.Label>
                   <Form.Control
-                    // name="username"
                     onChange={onChange}
                     onBlur={onBlur}
                     value={value}
@@ -127,7 +122,6 @@ export const FormPage = () => {
                 <Form.Group className="mb-3">
                   <Form.Label>Message</Form.Label>
                   <Form.Control
-                    // name="username"
                     onChange={onChange}
                     onBlur={onBlur}
                     value={value}

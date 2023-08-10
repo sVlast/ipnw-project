@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Container, ListGroup, Row, Stack } from 'react-bootstrap';
 import { ResourceItem } from '../shared/components/ResourceItems';
-import { useApi, useApiUrl, useResources } from '../shared/services/api/api';
+import { useApi, useResources } from '../shared/services/api/api';
 
 export const isPrimitive = (val: any) => {
   if (val === Object(val)) {
@@ -28,10 +28,6 @@ export const ListPage = () => {
 
   const [selectedItems, setSelectedItems] = useState([{}]);
 
-  // const handleAddItemToList = (item) => {};
-
-  const [selectedUrl, setSelectedUrl] = useState<string>('');
-
   if (baseDataisLoading) {
     return <div>Loading</div>;
   }
@@ -39,10 +35,6 @@ export const ListPage = () => {
   if (baseDataisError || !baseData) {
     return <div>Error</div>;
   }
-
-  // if (initialResource) {
-  //   console.log(initialResource);
-  // }
 
   const handleRemove = (item: any) => {
     setSelectedItems(

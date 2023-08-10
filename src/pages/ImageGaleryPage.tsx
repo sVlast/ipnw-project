@@ -13,8 +13,6 @@ export const ImageGaleryPage = () => {
     setInterval(null);
   };
 
-  // const handleAddImage = () => {};
-
   const CarouselImage = (props: { index: number }) => {
     const { index = 1 } = props;
     return (

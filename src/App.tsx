@@ -22,10 +22,6 @@ const themeStyle = css`
 `;
 
 export const App = (): JSX.Element => {
-  // const themeContext;
-
-  // document.body.style.backgroundColor = 'black';
-  // document.body.style.color = 'yellow';
 
   useEffect(() => {
     const theme = themeStore.getTheme();

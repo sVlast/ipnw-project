@@ -3,15 +3,6 @@ import { useMutation, useQuery, UseQueryResult } from 'react-query';
 import { http, ResourceSearch } from '../http/http';
 import { CacheKeys } from './cache-configuration';
 
-// export const useApi = () => {
-//   const { mutateAsync } = useMutation<any, any, any>(http.testApi, {
-//     onError: (error) => {
-//       throw error;
-//     },
-//   });
-//   return mutateAsync;
-// };
-
 export const useApi = (): UseQueryResult<any> => {
   return useQuery(CacheKeys.API, () => http.baseApi());
 };
